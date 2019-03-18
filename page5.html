@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Comment se protéger ? </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="page.css">
+
+    <!-- !plugin -->
+    <script src="jquery-3.3.1.js"> </script>
+    <script src="index.js"> </script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css"> 
+    <script src="js/bootstrap.js"></script>
+
+
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script> 
+    <link rel="stylesheet" type="text/css" media="screen" href="jquery-ui-1.12.1.custom/jquery-ui.css"> 
+</head>
+<body style="background-color : #757575 ; padding : 3rem ; ">
+    
+    <!-- !Go back button -->
+    <button class="btn btn-link" id = "go-back"> 
+        <img src="icons8-double-left-50.png" style = "width : 3rem ; height : 3rem ; ">
+    </button>
+
+    <script>
+        $("#go-back").click (function () {
+            window.history.back() ; 
+        }) ; 
+    </script> 
+
+    <!-- !Content  -->
+    <div class="container-fluid" style="opacity : 0.8;" > 
+        <h1 class="header-text"> Comment se protéger ? </h1>
+    </div> 
+
+    <div class="container content-area high-light">
+        <img src="caret-right-solid.svg" style = "width : 3rem ; height : 2rem; "> 
+        <p class="content-text" style="font-size: 1.5rem ; margin-right : 1rem ; width : 40% ;"> On peut protéger de l'usupartion d'identité par plusieurs façon </p> 
+        <div class="container"> 
+            <p class="content-text" style="border-bottom: 1px solid #fff"> En utilisant un mot de passe plus sécurisé pas une suite de caractère tel que "Azertyuiop", en mettant des majuscule, minuscule, chiffre, ... </p>
+            <p class="content-text" style="border-bottom: 1px solid #fff"> Faire attention aux sites auquel vous vous inscrivez </p>  
+            <p class="content-text" style="border-bottom: 1px solid #fff" > Ne pas répondre aux spams, aux mails arnaques qui se fait passer pour votre banque ou qui vous demandes vos coordonnées </p>
+            <p class="content-text" style="border-bottom: 1px solid #fff" >  Mettez un anti-virus, pare-feu </p>
+            <p class="content-text" style="border-bottom: 1px solid #fff" > Eviter d'aller sur n'importe quel site </p>
+            <p class="content-text" > Ne pas cliquer sur n'importe quelle pub </p>
+        </div>
+    </div>
+
+    <script src="page.js"></script> 
+</body>
+</html>

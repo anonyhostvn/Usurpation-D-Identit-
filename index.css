@@ -15,7 +15,10 @@
     padding-right : 2rem ; 
     display:  block ;
 }
-
+.author {
+    border-bottom : 1px solid #fff ; 
+    height : 7rem ; 
+}
 /* 
 .content:hover {
     background-color : #a4a4a4 ; 

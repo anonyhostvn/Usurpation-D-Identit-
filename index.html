@@ -39,45 +39,48 @@
 
     </div>
 
-    <div id="content-page" class="container-fluid" style = "background-color: #494949 ; height : 100vh ; width: 100%;  border-top : 1px solid #fff ; ">  
-        <div class="content" style="width : 25% ; " id="page-2">
+    <div id="content-page" class="container-fluid" style = "background-color: #494949 ; height : 100vh ; width: 100%;  border-top : 1px solid #fff ; padding : 0 ;  ">  
+        <div class="content container" style="width : 25% ; " id="page-2">
             <h1 style="font-family: header-font ; color : #fff ; font-size : 3vw ; "> Définition </h1>
         </div>
 
-        <div class="content" style="width : 25% ; " id="page-3">
+        <div class="content container" style="width : 25% ; " id="page-3">
             <h1 style="font-family: header-font ; color : #fff ; font-size : 3vw ; "> Conséquences </h1>
         </div>
 
-        <div class="content" style="width : 25% ; " id = "page-4">
+        <div class="content container" style="width : 25% ; " id = "page-4">
             <h1 style="font-family: header-font ; color : #fff ; font-size : 3vw ; "> Les solutions en cas d’usurpation d’identité </h1>
         </div>
 
-        <div class="content" style="width : 25% ; " id = "page-5">
+        <div class="content container" style="width : 25% ; " id = "page-5">
             <h1 style="font-family: header-font ; color : #fff ; font-size : 3vw ; "> Comment se protéger ? </h1>
         </div>
     </div>
 
     <div id = "footer" class="container-fluid" style="background-color: #000000 ; height : 50vh ; border-top : 1px solid #fff ; padding : 3rem ; display: flex ; flex-direction: row ;  ">
-        <p style="font-family : header-font ; color : #fff ; font-size : 2.5rem ; "> Les pages réalisées par </p>
+        <div class="container" style="width : 30% ; ">   
+            <p style="font-family : header-font ; color : #fff ; font-size : 2.5rem ; border-right : 1px solid #fff ; "> Les pages réalisées par </p>
+            <button class="btn btn-dark" id = "page-6" style="font-family: header-font ; background-color: #000000 ; ">  Bibliographie </button> 
+        </div>
         <div class="container" style = "display: flex ; flex-direction: row ; ">
-            <div class="container">
-                <p style="font-family : header-font ; color : #fff ; font-size : 2rem ; "> Page 1 </p> 
-                <p style="font-family : header-font ; color : #fff ; font-size : 1.5rem ;" > Type Name here </p>  
+            <div class="container author">
+                <!-- <p style="font-family : header-font ; color : #fff ; font-size : 2rem ; "> Page 1 </p>  -->
+                <p style="font-family : header-font ; color : #fff ; font-size : 1.5rem ;" > Vu Hoang Nhi </p>  
             </div>
 
-            <div class="container">
-                <p style="font-family : header-font ; color : #fff ; font-size : 2rem ; "> Page 2 </p> 
-                <p style="font-family : header-font ; color : #fff ; font-size : 1.5rem ;" > Type Name here </p>  
+            <div class="container author">
+                <!-- <p style="font-family : header-font ; color : #fff ; font-size : 2rem ; "> Page 2 </p>  -->
+                <p style="font-family : header-font ; color : #fff ; font-size : 1.5rem ;" > Nguyen Thi Phuong Hanh </p>  
             </div>
 
-            <div class="container">
-                <p style="font-family : header-font ; color : #fff ; font-size : 2rem ; "> Page 3 </p> 
-                <p style="font-family : header-font ; color : #fff ; font-size : 1.5rem ;" > Type Name here </p>  
+            <div class="container author">
+                <!-- <p style="font-family : header-font ; color : #fff ; font-size : 2rem ; "> Page 3 </p>  -->
+                <p style="font-family : header-font ; color : #fff ; font-size : 1.5rem ;" > Vidotto Audrey </p>  
             </div>
 
-            <div class="container">
-                <p style="font-family : header-font ; color : #fff ; font-size : 2rem ; "> Page 4 </p> 
-                <p style="font-family : header-font ; color : #fff ; font-size : 1.5rem ;" > Type Name here </p>  
+            <div class="container author">
+                <!-- <p style="font-family : header-font ; color : #fff ; font-size : 2rem ; "> Page 4 </p>  -->
+                <p style="font-family : header-font ; color : #fff ; font-size : 1.5rem ;" > Tenorio Moscoso Sindy </p>  
             </div>
         </div> 
     </div> 
@@ -118,6 +121,10 @@
 
         $("#page-5").click (function () {
             document.location.href = "page5.html" ; 
+        }) ; 
+
+        $("#page-6").click (function () {
+            document.location.href = "page6.html" ; 
         }) ; 
     </script> 
 </body>
